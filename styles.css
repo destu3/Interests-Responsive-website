@@ -1,5 +1,75 @@
+/* fonts */
+
+@font-face {
+    font-family: Beaufort;
+    src: url(./fonts/BeaufortforLOL-Bold.woff.ttf);
+}
+
+/* soft reset */
+
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+/* Global Variables */
+
+:root{
+    --main-dark-color: #231f20;
+    --main-red-color: #ec1e27;
+}
+
+/* header section */
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background: url(./images/yone.jpg) no-repeat center / cover ;
+    font-family: Beaufort, 'Segoe UI', sans-serif;
+}
+
+nav{
+    display: flex;
+    padding: 1% 6%;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav img{
+    width: 120px;
+    transition: all 0.5s ease-out;
+}
+
+nav img:hover{
+    transform: rotate(90deg);
+    transition: all 0.5s ease-in;  
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: var(--main-dark-color);
+    font-weight: 900;
+    font-size: 1.3rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-links ul li a:hover{
+    color: var(--main-red-color);
 }
