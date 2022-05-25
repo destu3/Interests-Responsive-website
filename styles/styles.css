@@ -56,7 +56,8 @@ nav img:hover{
 .nav-links ul li{
     list-style: none;
     display: inline-block;
-    padding: 8px 12px;
+    padding-top: 3px;
+    margin: 0 1rem;
 }
 
 .nav-links ul li a{
@@ -119,4 +120,20 @@ nav img:hover{
     line-height: initial;
     margin: 1rem auto;
     font-weight: 600;
+}
+
+.nav-links .current{
+    position: relative;
+}
+
+.nav-links .current::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(1);
+    height: 3px;
+    left: 0;
+    top: 0;
+    background: var(--main-brand-color);
+    transition: transform 0.3s ease-out;
 }
