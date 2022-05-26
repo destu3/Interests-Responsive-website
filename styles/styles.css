@@ -143,8 +143,8 @@ nav img:hover{
     }
 
     .fa-solid.fa-bars:hover{
-        transform: scale(1.2);
-        transition: all 0.3s ease-in;
+        transition: all 0.5s ease-in;
+        transform: rotate(90deg);
     }
 
     nav .fa-solid{
@@ -157,7 +157,7 @@ nav img:hover{
     .text-box > p{
         font-family: "Spectral", 'Segoe UI', sans-serif;
         font-size: 1.1rem;
-        max-width: 35ch;
+        width: 35ch;
         line-height: initial;
         margin: 1rem auto;
     }
