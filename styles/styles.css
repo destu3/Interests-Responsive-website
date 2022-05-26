@@ -71,23 +71,6 @@ nav img:hover{
     position: relative;
 }
 
-.nav-links ul li a::after{
-    content: "";
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 3px;
-    left: 0;
-    bottom: 0;
-    background: var(--main-brand-color);
-    transition: transform 0.3s ease-out;
-}
-
-.nav-links ul li a:hover::after{
-    transform: scaleX(1);
-    transform-origin: bottom center;
-}
-
 .nav-links ul li a:hover{
     color: var(--main-brand-color);
 }
@@ -121,14 +104,87 @@ nav img:hover{
     position: relative;
 }
 
-.nav-links .current::after{
-    content: "";
-    position: absolute;
-    width: 100%;
-    transform: scaleX(1);
-    height: 3px;
-    left: 0;
-    top: 0;
-    background: var(--main-brand-color);
-    transition: transform 0.3s ease-in;
+/* media queries */
+
+@media (max-width: 700px) {
+    .text-box > h1{
+        font-size: 1.8rem;
+        text-transform: uppercase;
+    }
+
+    .nav-links ul li{
+        display: block;
+    }
+
+    .nav-links ul li a{
+        color: var(--main-dark-color);
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .nav-links{
+        position: absolute;
+        background: rgb(148, 81, 126, 0.6 );
+        height: 100vh;
+        width: 50%;
+        top: 0;
+        right: -50%;
+        text-align: left;
+        z-index: 2;
+        transition: all 0.6s ease-in-out;
+    }
+
+    .fa-solid.fa-bars{
+        transition: all 0.5s ease-out;
+    }
+
+    .fa-solid.fa-bars:hover{
+        transform: scale(1.2);
+        transition: all 0.3s ease-in;
+    }
+
+    nav .fa-solid{
+        color: var(--main-dark-color);
+        margin: 10px;
+        font-size: 30px;
+        cursor: pointer;
+    } 
+}
+
+@media (min-width: 700px) {
+
+    .nav-links .current::after{
+        content: "";
+        position: absolute;
+        width: 100%;
+        transform: scaleX(1);
+        height: 3px;
+        left: 0;
+        top: 0;
+        background: var(--main-brand-color);
+        transition: transform 0.3s ease-in;
+    }
+    
+    .nav-links ul li a::after{
+        content: "";
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 3px;
+        left: 0;
+        bottom: 0;
+        background: var(--main-brand-color);
+        transition: transform 0.3s ease-out;
+    }
+
+    .nav-links ul li a:hover::after{
+        transform: scaleX(1);
+        transform-origin: bottom center;
+    }
+
+    nav .fa-solid{
+        display: none;
+    } 
 }
