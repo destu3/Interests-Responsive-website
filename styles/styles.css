@@ -106,6 +106,8 @@ nav img:hover{
 
 /* media queries */
 
+/* smaller screens */
+
 @media (max-width: 700px) {
     .text-box > h1{
         font-size: 1.8rem;
@@ -151,7 +153,17 @@ nav img:hover{
         font-size: 30px;
         cursor: pointer;
     } 
+
+    .text-box > p{
+        font-family: "Spectral", 'Segoe UI', sans-serif;
+        font-size: 1.1rem;
+        max-width: 35ch;
+        line-height: initial;
+        margin: 1rem auto;
+    }
 }
+
+/* bigger screens */
 
 @media (min-width: 700px) {
 
