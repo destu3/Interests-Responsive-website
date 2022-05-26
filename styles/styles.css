@@ -122,7 +122,7 @@ nav img:hover{
         color: var(--main-dark-color);
     }
 
-    body {
+    html, body {
         overflow-x: hidden;
     }
 
@@ -157,7 +157,7 @@ nav img:hover{
     .text-box > p{
         font-family: "Spectral", 'Segoe UI', sans-serif;
         font-size: 1.1rem;
-        width: 35ch;
+        max-width: 35ch;
         line-height: initial;
         margin: 1rem auto;
     }
