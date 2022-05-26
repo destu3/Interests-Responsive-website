@@ -1,11 +1,5 @@
 /* fonts */
-@import url('https://fonts.googleapis.com/css2?family=Spectral&display=swap');
-
-@font-face {
-    font-family: Beaufort;
-    src: url(./fonts/BeaufortforLOL-Bold.woff.ttf);
-}
-
+@import url('https://fonts.googleapis.com/css2?family=Spectral&display=swap');@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 /* soft reset */
 
 *{
@@ -112,41 +106,26 @@ nav img:hover{
 /* characters section */
 
 .characters{
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
     font-family: Spectral, 'Segoe UI', sans-serif;
     text-align: center;
     padding-top: 100px;
-    border: 1px solid firebrick;
+    position: relative;
 }
 
 .row{
     padding: 32px 0;
 }
 
-#character-intro{
-    margin-bottom: 120px;
-}
-
-#character-intro > h2{
-    font-size: 2.2rem;
-    text-transform: uppercase;
-}
-
-#character-intro > p{
-    max-width: 75ch;
-    margin: 1rem auto;
-    font-weight: 500;
-    font-size: 1.2rem;
-}
-
 .character-profile{
     position: relative;
-    border: 1px solid black;
+    border: 5px solid var(--main-brand-color);
 }
 
 .character-profile > h3{
-    margin-top: 120px;
+    margin-top: 100px;
+    font-size: 1.7rem;
 }
 
 .character-profile > img{
@@ -161,6 +140,30 @@ nav img:hover{
     background: linear-gradient(to right, var(--main-brand-color), pink) border-box;
     border: 5px solid transparent;
 }
+
+.known-as{
+    color: var(--main-brand-color);
+    font-weight: 700;
+}
+
+.character-profile > blockquote{
+    max-width: 60%;
+    padding: 6px;
+    margin: 2px auto;
+    font-size: 1.21rem;
+    font-weight: 700;
+    color: var(--main-brand-color);
+}
+
+.character-profile > p{
+    max-width: 70%;
+    padding: 6px;
+    margin: 2px auto;
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: var(--main-dark-color);
+}
+
 
 /* media queries */
 
