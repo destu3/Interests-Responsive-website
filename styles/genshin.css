@@ -9,8 +9,3 @@
     font-family: Spectral, 'Segoe UI', sans-serif;
     position: relative;
 }
-
-.text-box > h1::first-letter{
-    color: var(--dark-blue);
-    font-size: 200%;
-}

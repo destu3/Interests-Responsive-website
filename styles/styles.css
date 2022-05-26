@@ -108,11 +108,6 @@ nav img:hover{
     text-transform: uppercase;
 }
 
-.text-box > h1::first-letter{
-    color: var(--main-brand-color);
-    font-size: 200%;
-}
-
 .text-box > p{
     font-family: "Spectral", 'Segoe UI', sans-serif;
     font-size: 1.35rem;
