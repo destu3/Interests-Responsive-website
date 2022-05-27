@@ -346,4 +346,9 @@ i{
     nav .fa-solid{
         display: none;
     } 
+
+    i:hover{
+        font-size: 110px;
+        color: var(--main-brand-color);
+    }
 }
