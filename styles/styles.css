@@ -212,9 +212,29 @@ i:hover{
         background: url(../images/LOL-character-images/yone-portrait.png) fixed no-repeat top / cover ;
     }
 
+    .text-box{
+        width: 100%;
+        padding: 0 1rem;
+        margin: auto;
+        color: var(--main-dark-color);
+        position: absolute;
+        top: 38%;
+        text-align: center;
+        line-height:35px;
+    }
+    
     .text-box > h1{
-        font-size: 1.8rem;
-        text-transform: uppercase;
+        font-size: 1.9rem;
+        font-weight: 800;
+    }
+
+    .text-box > p{
+        font-family: "Spectral", 'Segoe UI', sans-serif;
+        font-size: 1.2rem;
+        font-weight: 700;
+        max-width: 35ch;
+        line-height: initial;
+        margin: 1rem auto;
     }
 
     .nav-links ul li{
@@ -265,14 +285,6 @@ i:hover{
         background: url(../images/LOL-character-images/yone-profile-portrait.png) no-repeat top / cover ;
     }
 
-    .text-box > p{
-        font-family: "Spectral", 'Segoe UI', sans-serif;
-        font-size: 1.1rem;
-        max-width: 35ch;
-        line-height: initial;
-        margin: 1rem auto;
-    }
-
     i{
         font-size: 35px;
         color: var(--main-dark-color);
@@ -286,7 +298,7 @@ i:hover{
     }
 
     .character-profile > p{
-        max-width: 85%;
+        max-width: 90%;
         padding: 6px;
         margin: 2px auto;
         font-size: 1.15rem;
