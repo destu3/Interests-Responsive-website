@@ -68,6 +68,7 @@ nav img:hover{
     cursor: pointer;
     transition: all 0.3s ease-in-out;
     position: relative;
+    line-height: 2px;
 }
 
 .nav-links ul li a:hover{
@@ -117,6 +118,7 @@ nav img:hover{
 .row{
     padding: 60px 0;
     position: relative;
+    min-height: 630px;
 }
 
 .character-profile{
@@ -145,9 +147,9 @@ nav img:hover{
     border: 5px solid transparent;
 }
 
-.known-as{
-    color: var(--main-brand-color);
-    font-weight: 700;
+.char-name{
+    color: var(--main-dark-color);
+    font-weight: 900;
 }
 
 .character-profile > blockquote{
@@ -191,7 +193,6 @@ nav img:hover{
 i{
     font-size: 90px;
     color: var(--main-dark-color);
-    transition: all 0.3s ease-out;
 }
 
 /* media queries */
@@ -205,6 +206,15 @@ i{
         width: 100%;
         background: url(../images/LOL-character-images/yone-portrait.png) no-repeat top / cover;
     }
+
+    .nav-links ul li a{
+        line-height: 2px;
+    }
+
+    .nav-links ul li {
+        padding: 6px 0;
+    }
+    
 
     .text-box{
         width: 100%;
@@ -282,10 +292,12 @@ i{
     i{
         font-size: 35px;
         color: var(--main-dark-color);
+        transition: all 0.2s ease-out;
     }
     
     i:active{
         font-size: 55px;
+        transition: all 0.2s ease-in;
     }
 
     .character-profile > p{
