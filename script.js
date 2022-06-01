@@ -32,7 +32,8 @@ const characters = [
         charQuote : "The road to ruin is shorter than you think.",
         charCite : "~ Yasuo",
         charLore : "An Ionian of deep resolve, Yasuo is an agile swordsman who wields the air itself against his enemies. As a proud young man, he was falsely accused of murdering his master—unable to prove his innocence, he was forced to slay his own brother in self defense. Even after his master's true killer was revealed, Yasuo still could not forgive himself for all he had done, and now wanders his homeland with only the wind to guide his blade.",
-        charBackgroundImage : "url(./images/LOL-character-images/yasuo/yasuo-banner.png)"
+        charBackgroundImage : "url(./images/LOL-character-images/yasuo/yasuo-banner.png)",
+        charLOLChampionPage : "https://www.leagueoflegends.com/en-us/champions/yasuo/"
     },
     {
         charImage : "./images/LOL-character-images/akali/akali-char-icon.jpg",
@@ -40,7 +41,8 @@ const characters = [
         charQuote : "The only rule that matters is that your enemies don't walk away.",
         charCite : "~ Akali",
         charLore : "Abandoning the Kinkou Order and her title of the Fist of Shadow, Akali now strikes alone, ready to be the deadly weapon her people need. Though she holds onto all she learned from her master Shen, she has pledged to defend Ionia from its enemies, one kill at a time. Akali may strike in silence, but her message will be heard loud and clear: fear the assassin with no master.",
-        charBackgroundImage : "url(images/LOL-character-images/akali/akali-banner.png)"
+        charBackgroundImage : "url(images/LOL-character-images/akali/akali-banner.png)",
+        charLOLChampionPage : "https://www.leagueoflegends.com/en-us/champions/akali/"
     },
     {
         charImage : "images/LOL-character-images/kayn/kayn-char-icon.jpg",
@@ -48,7 +50,8 @@ const characters = [
         charQuote : "I learned from a young age to embrace the shadows.",
         charCite : "~ Kayn",
         charLore : "A peerless practitioner of lethal shadow magic, Shieda Kayn battles to achieve his true destiny—to one day lead the Order of the Shadow into a new era of Ionian supremacy. He audaciously wields the sentient darkin weapon Rhaast, undeterred by its creeping corruption of his body and mind. There are only two possible outcomes: either Kayn bends the weapon to his will... or the malevolent scythe consumes him completely, paving the way for the destruction of all Runeterra.",
-        charBackgroundImage : "url(./images/LOL-character-images/kayn/kayn-banner.png)"
+        charBackgroundImage : "url(./images/LOL-character-images/kayn/kayn-banner.png)",
+        charLOLChampionPage : "https://www.leagueoflegends.com/en-us/champions/kayn/"
     },
 ]
 
@@ -74,6 +77,18 @@ function createCharProfile(){
         const charLore = document.createElement("p")
         charLore.classList.add("char-brief-lore")
         charLore.textContent = character.charLore 
+        const spanLink = document.createElement("span")
+        const spanAnchor = document.createElement("a")
+        spanAnchor.href = character.charLOLChampionPage
+        spanAnchor.classList.add("char-learn-more-link")
+        spanAnchor.target = "_blank"
+        spanAnchor.append(" learn more")
+        const rightIcon = document.createElement("i")
+        rightIcon.classList.add("fa-solid")
+        rightIcon.classList.add("fa-chevron-right")
+        spanAnchor.append(rightIcon)
+        spanLink.appendChild(spanAnchor)
+        charLore.appendChild(spanLink)
 
         charContainer.append(charImage, charName, blockQuote, charLore)
         charSection.appendChild(charContainer)

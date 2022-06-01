@@ -174,7 +174,7 @@ nav img:hover{
     margin: 2px auto;
     font-size: 1.21rem;
     font-weight: 800;
-    color: var(--main-brand-color);
+    color: var(--main-dark-color);
 }
 
 .character-profile > p{
@@ -184,6 +184,20 @@ nav img:hover{
     font-size: 1.15rem;
     font-weight: 600;
     color: var(--main-dark-color);
+    font-weight: 800;
+    padding-bottom: 30px;
+}
+
+.char-learn-more-link{
+    text-decoration: none;
+    color: var(--main-brand-color);
+    font-weight: 900;
+    transition: all 0.3s;
+}
+
+.char-learn-more-link:hover i{
+    position: relative;
+    left: 8px;
 }
 
 /* media queries */
@@ -283,17 +297,6 @@ nav img:hover{
         grid-template-columns: repeat(1, 1fr);
     }
 
-    i{
-        font-size: 35px;
-        color: var(--main-dark-color);
-        transition: all 0.2s ease-out;
-    }
-    
-    i:active{
-        font-size: 55px;
-        transition: all 0.2s ease-in;
-    }
-
     .character-profile > p{
         max-width: 90%;
         padding: 6px;
@@ -301,18 +304,6 @@ nav img:hover{
         font-size: 1.15rem;
         font-weight: 600;
         color: var(--main-dark-color);
-    }
-
-    .next-btn{
-        top:37px; left: 88%; bottom: 0; right: 0;
-    }
-    
-    .prev-btn{
-        top: 37px; left: 0; bottom: 0; right:88%;
-    }
-
-    .character-profile{
-        padding-bottom: 40px;
     }
 }
 
@@ -352,9 +343,4 @@ nav img:hover{
     nav .fa-solid{
         display: none;
     } 
-
-    i:hover{
-        font-size: 110px;
-        color: var(--main-brand-color);
-    }
 }
