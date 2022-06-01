@@ -48,31 +48,3 @@ const characters = [
         charBackgroundImage : "url(./images/LOL-character-images/yasuo/yasuo-banner.png"
     },
 ]
-
-let currentCharacterIndex = 0;
-
-function updateCharacter(index) {
-    
-    charIcon.src = characters[index].charImage
-    charName.textContent = characters[index].charName
-    charQuote.textContent = characters[index].charQuote
-    charSite.textContent = characters[index].charSite
-    charLore.textContent = characters[index].charLore
-    charBackgroundImage.style.backgroundImage  = characters[index].charBackgroundImage
-}
-
-nextBtn.addEventListener("click", () => {
-    currentCharacterIndex ++
-    if (currentCharacterIndex > characters.length - 1) {
-        currentCharacterIndex = 0 
-      }
-    updateCharacter(currentCharacterIndex)
-})
-
-prevBtn.addEventListener("click", () => {
-    currentCharacterIndex --
-    if (currentCharacterIndex < 0) {
-        currentCharacterIndex = characters.length - 1
-      }
-    updateCharacter(currentCharacterIndex)
-})
