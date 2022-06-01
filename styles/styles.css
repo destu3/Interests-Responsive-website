@@ -109,6 +109,21 @@ nav img:hover{
 
 /* characters section */
 
+#character-section-heading{
+    font-family: "Quicksand", sans-serif;
+    text-transform: uppercase;
+    width: fit-content;
+    margin: 100px auto 130px auto;
+    font-size: 2.1rem;
+    letter-spacing: 2px;
+    font-weight: 800;
+    background-image: linear-gradient(to right, var(--main-brand-color), var(--main-dark-color));
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    padding: 0 10px;
+}
+
 .characters{
     width: 80%;
     margin: 0 auto;
@@ -117,16 +132,17 @@ nav img:hover{
     position: relative;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 25px;
+    grid-gap:100px 25px;
 }
 
 .character-profile{
     position: relative;
     border: 3px solid var(--main-brand-color);
-    padding-bottom: 70px;
-    background: url(../images/LOL-character-images/yone/yone-char-bg-image.png) no-repeat center / cover ;
+    background: url(../images/LOL-character-images/yone/yone-char-bg-image.png) no-repeat center center / cover;
+    background-origin: border-box;
     box-shadow: inset 0 0 8px;
-    font-family: "Quicksand";
+    font-family: "Quicksand", sans-serif;
+    transition: all 0.7s;
 }
 
 .character-profile > h3{
