@@ -2,16 +2,14 @@
 
 const closeBtn = document.querySelector(".fa-xmark")
 const showBtn = document.querySelector(".fa-bars")
-const navArea = document.querySelector(".nav-links")
+const navBar = document.querySelector(".nav-links")
 
 closeBtn.addEventListener("click",() => {
-    navArea.style.right = "-50%"
-    showBtn.style.color = "#231f20"
+    navBar.classList.remove("show-sidebar")
 })
 
 showBtn.addEventListener("click",() => {
-    navArea.style.right = "0"
-    showBtn.style.color = "rgb(148, 81, 126, 0.6 )"
+    navBar.classList.add("show-sidebar")
 })
 
 /* characters area */
